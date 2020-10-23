@@ -1,0 +1,153 @@
+.app {
+  text-align: center;
+
+  .app-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 50px;
+
+    > div:last-child {
+      width: 90%;
+    }
+
+    .main-navbar {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      input {
+        width: 90%;
+        min-height: 35px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 20px;
+        border: 1px;
+      }
+
+      button {
+        width: 8%;
+        border-radius: 5px;
+        border: 0px;
+        cursor: pointer;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .Collapsible {
+      width: 90%;
+    }
+
+    .custom-select {
+      display: inline-block;
+      margin: 0% 2%;
+      width: 90%;
+    }
+  }
+
+  .Collapsible__contentInner {
+    display: flex;
+
+    > div {
+      width: 100%;
+      margin-bottom: 10px;
+
+      > h5 {
+        margin: 10px 0px;
+        margin-left: 5%;
+        text-align: left;
+      }
+
+      > div:last-child {
+        display: inline-block;
+        margin: 0% 2%;
+        width: 90%;
+
+        > div:first-child {
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  img.profile-image {
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Select-menu-outer {
+  z-index: 999 !important;
+}
+
+.css-26l3qy-menu {
+  z-index: 9999 !important;
+}
+
+.Collapsible__contentOuter {
+  overflow: inherit !important;
+}
+
+.optionContainer li {
+  font-size: 15px;
+  padding: 5px 10px;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .app-header {
+    padding: 30px;
+  }
+  .app-header > div {
+    width: 100% !important;
+  }
+  .app-header > div > input {
+    margin-right: 10px;
+    width: 80% !important;
+  }
+  .app-header > div > button {
+    width: 18% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Collapsible__contentInner {
+    display: block !important;
+  }
+  .app-header .Collapsible {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
